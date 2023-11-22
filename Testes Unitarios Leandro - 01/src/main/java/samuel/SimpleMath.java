@@ -12,6 +12,7 @@ public class SimpleMath {
         return firstNumber * secondNumber;
     }
     public Double division(Double firstNumber, Double secondNumber){
+        if (secondNumber.equals(0D)) throw new  ArithmeticException("impossible to divide by zero!");
         return firstNumber / secondNumber;
     }
 
